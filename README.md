@@ -30,6 +30,33 @@ Après la connexion il nous affiche une fenêtre qui contient deux interfaces, l
 
 <img src="https://www.mediafire.com/convkey/36bd/1p830pnzafac31vzg.jpg">
 
+* Construire la hiérarchie du .jar et y déplacer le code compilé :
+
+<img src="https://www.mediafire.com/convkey/6a2c/76ii4bo3ctmv4c5zg.jpg">
+
+<img src="https://www.mediafire.com/convkey/4f88/07ka6wsujbwph55zg.jpg">
+
+
+* Générer le jar avec la commande : jar -cvf mbds_analysevente.jar -C . org, j'ai nommé le jar "mbds_analysevente" :
+
+<img src="https://www.mediafire.com/convkey/c9b0/6bilr86bs1aw5fczg.jpg">
+
+* Après supprimer le répertoire org avec la commande rm -rf org :
+
+<img src="https://www.mediafire.com/convkey/d936/8x4f1odv5yaeq4jzg.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
 * Sélectionner le fichier qui contient le code java Hadoop (celle-ci de mon repository), et cliquer sur envoyer pour le déplacer vers notre machine virtuelle :
 
 <img src="https://www.mediafire.com/convkey/de7d/repvwhm8t20gl51zg.jpg">
