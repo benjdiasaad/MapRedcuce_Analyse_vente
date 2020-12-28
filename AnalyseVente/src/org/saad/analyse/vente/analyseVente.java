@@ -28,5 +28,21 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
 public class analyseVente{
+
+	public static class Reduce extends Reducer<Text,IntWritable,Text,IntWritable>{
+		private IntWritable result = new IntWritable();
+		public void reduce(Text key, Iterable<IntWritable> values,Context context) throws IOException, InterruptedException {
+			int sum = 0;
+			for (IntWritable val : values) {
+			sum += val.get();
+			
+			}
+			if (sum<0)
+				sum=-sum;
+			result.set(sum);
+			//System.out.println("\nLet's put a smile on that face"+sum);
+			context.write(key, result);
+		}
+	}
 	
 }
