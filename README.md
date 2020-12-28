@@ -15,4 +15,4 @@ virtuelle il faut utiliser WinSCP.
 PuTTY : est un émulateur de terminal doublé d'un client pour les protocoles SSH, Telnet, rlogin, et TCP brut. Il permet également des connexions directes par liaison série RS-232. À l'origine disponible uniquement pour Windows, il est à présent porté sur diverses plates-formes Unix.
 Après l’installation de PuTTY, lancer l’émulateur et une fenêtre sera déclenché :
 
-<img src="https://www.mediafire.com/convkey/cce7/nhs3a4sz6h6w8r6zg.jpg">
+<img src="https://www.mediafire.com/convkey/cce7/nhs3a4sz6h6w8r6zg.jpg" style="text-align: center;">
