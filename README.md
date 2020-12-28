@@ -30,6 +30,16 @@ Après la connexion il nous affiche une fenêtre qui contient deux interfaces, l
 
 <img src="https://www.mediafire.com/convkey/36bd/1p830pnzafac31vzg.jpg">
 
+
+* Sélectionner le fichier qui contient le code java Hadoop (celle-ci de mon repository), et cliquer sur envoyer pour le déplacer vers notre machine virtuelle :
+
+<img src="https://www.mediafire.com/convkey/de7d/repvwhm8t20gl51zg.jpg">
+
+* Compiler le code, avec la commande : javac analyseVente.java :
+
+<img src="https://www.mediafire.com/convkey/d6f8/7zy0ir81ywocqvozg.jpg">
+
+
 * Construire la hiérarchie du .jar et y déplacer le code compilé :
 
 <img src="https://www.mediafire.com/convkey/6a2c/76ii4bo3ctmv4c5zg.jpg">
@@ -56,14 +66,6 @@ Après la connexion il nous affiche une fenêtre qui contient deux interfaces, l
 
 
 
-
-* Sélectionner le fichier qui contient le code java Hadoop (celle-ci de mon repository), et cliquer sur envoyer pour le déplacer vers notre machine virtuelle :
-
-<img src="https://www.mediafire.com/convkey/de7d/repvwhm8t20gl51zg.jpg">
-
-* Compiler le code, avec la commande : javac analyseVente.java :
-
-<img src="https://www.mediafire.com/convkey/d6f8/7zy0ir81ywocqvozg.jpg">
 
 
 
