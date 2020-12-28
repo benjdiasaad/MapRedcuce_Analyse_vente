@@ -45,4 +45,284 @@ public class analyseVente{
 		}
 	}
 	
+	public static class Map extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+		public void map(LongWritable key,Text value,Context context) 
+				throws IOException,InterruptedException
+		{
+			
+			String Line = value.toString();
+			StringTokenizer token = new StringTokenizer(Line,",");
+				String s1="0";
+				String s = token.nextToken();
+				//System.out.println("\nWhy so serious:-"+s);
+				value.set(s);
+				int count=0;
+				while(token.hasMoreTokens())
+				{
+					s1 = token.nextToken();
+					count++;
+				}
+				double number = Double.parseDouble(s1);
+				result = (int) number;
+				//System.out.println("\nSysout "+count);
+			context.write(value, new IntWritable(result));//1
+			
+		}
+		
+		
+	}
+	
+	
+	public static class Map1 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==8)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	
+	
+}
+	public static class Map2 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==10)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	
+	
+}
+	public static class Map3 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+		public void map(LongWritable key,Text value,Context context) 
+				throws IOException,InterruptedException
+		{
+			
+			String Line = value.toString();
+			StringTokenizer token = new StringTokenizer(Line,",");
+				String s1="0";
+				String s = token.nextToken();
+				s=token.nextToken();
+				System.out.println(s);
+				//System.out.println("\nWhy so serious:-"+s);
+				value.set(s);
+				int count=0;
+				while(token.hasMoreTokens())
+				{
+					s1 = token.nextToken();
+					count++;
+				}
+				double number = Double.parseDouble(s1);
+				result = (int) number;
+				//System.out.println("\nSysout "+count);
+			context.write(value, new IntWritable(result));//1
+			
+		}
+		
+		
+	}
+	
+	
+	public static class Map4 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			s=token.nextToken();
+			System.out.println(s);
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==8)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	
+	
+}
+	public static class Map5 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			s=token.nextToken();
+			System.out.println(s);
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==10)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	}
+	
+	public static class Map6 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+		public void map(LongWritable key,Text value,Context context) 
+				throws IOException,InterruptedException
+		{
+			
+			String Line = value.toString();
+			StringTokenizer token = new StringTokenizer(Line,",");
+				String s1="0";
+				String s = token.nextToken();
+				s=token.nextToken();
+				s=token.nextToken();
+				System.out.println(s);
+				//System.out.println("\nWhy so serious:-"+s);
+				value.set(s);
+				int count=0;
+				while(token.hasMoreTokens())
+				{
+					s1 = token.nextToken();
+					count++;
+				}
+				double number = Double.parseDouble(s1);
+				result = (int) number;
+				//System.out.println("\nSysout "+count);
+			context.write(value, new IntWritable(result));//1
+			
+		}
+		
+		
+	}
+	
+	
+	public static class Map7 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			s=token.nextToken();
+			s=token.nextToken();
+			System.out.println(s);
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==8)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	
+	
+}
+	public static class Map8 extends Mapper<LongWritable,Text,Text,IntWritable>{
+		int result;
+	public void map(LongWritable key,Text value,Context context) 
+			throws IOException,InterruptedException
+	{
+		
+		String Line = value.toString();
+		StringTokenizer token = new StringTokenizer(Line,",");
+			String s1="0";
+			String s = token.nextToken();
+			s=token.nextToken();
+			s=token.nextToken();
+			System.out.println(s);
+			//System.out.println("\nWhy so serious:-"+s);
+			value.set(s);
+			int count=0;
+			while(token.hasMoreTokens())
+			{
+				
+				s1 = token.nextToken();
+				if (count==10)
+					break;
+				count++;
+			}
+			double number = Double.parseDouble(s1);
+			result = (int) number;
+			//System.out.println("\nSysout "+count);
+		context.write(value, new IntWritable(result));//1
+		
+	}
+	}
+	
 }
