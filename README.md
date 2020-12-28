@@ -17,4 +17,6 @@ Après l’installation de PuTTY, lancer l’émulateur et une fenêtre sera dé
 
 <img style="display:inline;" src="https://www.mediafire.com/convkey/a1e7/zmdtmwd5qini1svzg.jpg">
 
+*	Pour connecter avec votre machine virtuelle, il faut taper adresse ip de la machine virtuelle et Port (c'est par défaut =22)
+
 
