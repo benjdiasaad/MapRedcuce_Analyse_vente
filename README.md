@@ -56,6 +56,30 @@ Après la connexion il nous affiche une fenêtre qui contient deux interfaces, l
 <img src="https://www.mediafire.com/convkey/d936/8x4f1odv5yaeq4jzg.jpg">
 
 
+* j'ai déplacé le fichier excel 'sales_world_10k.csv', avec la commande : hadoop fs -put sales_world_10k.csv /
+
+<img src="https://www.mediafire.com/convkey/6ac6/d0zhejywblaun2rzg.jpg">
+
+* Vérifiez la présence du fichier sur HDFS, avec la commande : hadoop fs -ls /
+
+<img src="https://www.mediafire.com/convkey/aade/yb8zstmk4a0hevkzg.jpg">
+
+* Exécuter le programme avec la commande : hadoop jar mbds_analysevente.jar org.analyse.vente.analyseVente /sales_world_10k.csv /resultanvente
+
+<img src="https://www.mediafire.com/convkey/4f85/2no5im8rno5mocdzg.jpg">
+
+* Consulter les résultats aprés l’exécution, Taper la commande: hadoop fs -ls /resultanvente
+
+<img src="https://www.mediafire.com/convkey/630a/x571ys5pgxzhenjzg.jpg">
+
+* Ou bien vous pouvez tapez la comande : hadoop fs -cat /resultanvente/*
+
+<img src="https://www.mediafire.com/convkey/7f37/5xk2c96yrvrpypuzg.jpg">
+
+
+
+
+
 
 
 
