@@ -12,6 +12,8 @@ pour transférer votre fichiers qui existent dans votre machine physique vers vo
 virtuelle il faut utiliser WinSCP.
 
  1) Utilisation de PuTTY:
+ 
+ 
 PuTTY : est un émulateur de terminal doublé d'un client pour les protocoles SSH, Telnet, rlogin, et TCP brut. Il permet également des connexions directes par liaison série RS-232. À l'origine disponible uniquement pour Windows, il est à présent porté sur diverses plates-formes Unix.
 Après l’installation de PuTTY, lancer l’émulateur et une fenêtre sera déclenché :
 
