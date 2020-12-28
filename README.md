@@ -1,4 +1,4 @@
-Code Hadoop Java pour le programme : Analyse de vente.
+Code Hadoop Java pour le programme MapReduce : Analyse de vente.
 ==================
 
 
