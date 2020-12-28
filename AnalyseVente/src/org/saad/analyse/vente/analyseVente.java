@@ -325,4 +325,243 @@ public class analyseVente{
 	}
 	}
 	
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		//-------------------------------------------------------------------------
+		Configuration conf = new Configuration();
+		String[] otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		Job job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		FileSystem hdfs =FileSystem.get(conf);
+		Path hdfsFilePath=new Path("/user/neeraj/o1");
+		Path localFilePath=new Path("/home/neeraj/Desktop/project/output");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+		conf = new Configuration();
+	    otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map1.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output1");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//----------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map2.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output2");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map3.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output3");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map4.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output4");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map5.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output5");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//------------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map6.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output6");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map7.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);
+		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output7");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//------------------------------------------------------------------------
+		conf = new Configuration();
+		otherArgs = new GenericOptionsParser(conf,args).getRemainingArgs();
+		if (otherArgs.length < 2) {
+		System.err.println("Usage: wordcount <in> [<in>...] <out>");
+		System.exit(2);
+		}
+		
+		job = Job.getInstance(conf, "project");
+		job.setJarByClass(analyseVente.class);
+		job.setMapperClass(Map8.class);
+		job.setCombinerClass(Reduce.class);
+		job.setReducerClass(Reduce.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+		for (int i = 0; i < otherArgs.length - 1; ++i) {
+			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
+		}
+		FileOutputFormat.setOutputPath(job,new Path(otherArgs[otherArgs.length - 1]));
+		job.waitForCompletion(true);		
+		hdfs =FileSystem.get(conf);
+		hdfsFilePath=new Path("/user/neeraj/o1");
+		localFilePath=new Path("/home/neeraj/Desktop/project/output8");
+		hdfs.copyToLocalFile(hdfsFilePath, localFilePath);
+		hdfs.delete(hdfsFilePath, true);
+		//-----------------------------------------------------------------------
+        //----------------------------------------------------------------------------
+		
+	}
 }
